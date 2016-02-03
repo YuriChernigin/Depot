@@ -9,6 +9,8 @@ test "product is not valid without a unique title" do
 	assert_equal [I18n.translate('activerecord.errors.messages.taken')], product.errors[:title]
 end
 
+
+
 test "product attributes must not be empty" do
 	product = Product.new
 	assert product.invalid?
